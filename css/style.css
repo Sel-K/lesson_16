@@ -379,6 +379,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin: auto;
   margin-left: 111px;
@@ -491,7 +495,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -500,6 +503,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -510,6 +516,38 @@ template {
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
