@@ -550,4 +550,13 @@ template {
     width: 99px;
   }
 }
+
+@media (max-width: 322px) {
+  .container {
+    max-width: 85%;
+  }
+  .logo {
+    width: 97px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
