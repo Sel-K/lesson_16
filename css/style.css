@@ -419,6 +419,10 @@ template {
   max-width: 177px;
 }
 
+.logo__image-min {
+  display: none;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,7 +559,11 @@ template {
   .container {
     max-width: 85%;
   }
-  .logo {
+  .logo__image {
+    display: none;
+  }
+  .logo__image-min {
+    display: inline;
     width: 97px;
   }
 }
