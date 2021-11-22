@@ -376,7 +376,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 29px;
 }
 
 .navbar-top__menu-button {
@@ -435,10 +435,10 @@ template {
 }
 
 .search__input {
-  width: 350px;
-  height: 100%;
+  width: 349px;
+  height: 97%;
   padding-right: 75px;
-  padding-left: 23px;
+  padding-left: 22px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
@@ -467,18 +467,18 @@ template {
 }
 
 .user__avatar {
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 39px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .user__name {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
   color: #333333;
-  margin-left: 18px;
+  margin-left: 17px;
 }
 
 .breadcrumb-list {
@@ -488,7 +488,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 27px 0;
   margin: 0;
   list-style: none;
 }
@@ -509,7 +509,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 6px;
   padding-bottom: 70px;
 }
 
@@ -527,7 +527,7 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .hotel-info__name {
@@ -568,7 +568,7 @@ template {
 
 .offer {
   font-size: 10px;
-  line-height: 13px;
+  line-height: 12px;
   padding: 4px 9px;
   background-color: #EC1F46;
   border-radius: 3px;
@@ -577,7 +577,7 @@ template {
 
 .rating {
   max-width: 65px;
-  min-height: 45px;
+  min-height: 46px;
   text-align: center;
   background-color: #EC1F46;
   color: #ffffff;
@@ -592,6 +592,53 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper-container:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 70;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.slider-button--next {
+  right: 5px;
+  background-image: url(../img/chevron-right.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/chevron-left.svg);
 }
 
 @media (max-width: 1200px) {
