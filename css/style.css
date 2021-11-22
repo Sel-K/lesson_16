@@ -616,6 +616,10 @@ template {
   z-index: 10;
 }
 
+.slider {
+  width: 728px;
+}
+
 .slider-button {
   position: absolute;
   top: 50%;
