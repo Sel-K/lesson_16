@@ -413,6 +413,7 @@ template {
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -532,6 +533,7 @@ template {
 .hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .hotel-info__description {
@@ -625,7 +627,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 731px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -700,12 +702,9 @@ template {
   .container {
     max-width: 85%;
   }
-  .logo__image {
-    display: none;
-  }
-  .logo__image-min {
-    display: inline;
-    width: 97px;
+  .container-top {
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
