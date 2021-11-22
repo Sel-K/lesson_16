@@ -376,7 +376,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 29px;
+  padding-bottom: 31px;
 }
 
 .navbar-top__menu-button {
@@ -616,10 +616,6 @@ template {
   z-index: 10;
 }
 
-.slider {
-  width: 728px;
-}
-
 .slider-button {
   position: absolute;
   top: 50%;
@@ -755,8 +751,8 @@ template {
     max-width: 85%;
   }
   .container-top {
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
