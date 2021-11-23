@@ -435,7 +435,7 @@ template {
 }
 
 .search__input {
-  width: 349px;
+  width: 350px;
   height: 97%;
   padding-right: 75px;
   padding-left: 22px;
@@ -535,6 +535,7 @@ template {
   margin-top: 4px;
   margin-bottom: 0;
   text-transform: uppercase;
+
 }
 
 .hotel-info__description {
@@ -544,6 +545,7 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .hotel-wrapper {
@@ -561,7 +563,6 @@ template {
   font-size: 12px;
   line-height: 15px;
 }
-
 .hotel-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,12 +584,10 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
-
 .offer {
   font-size: 10px;
   line-height: 12px;
@@ -600,7 +599,7 @@ template {
 
 .rating {
   max-width: 65px;
-  min-height: 46px;
+  min-height: 45px;
   text-align: center;
   background-color: #EC1F46;
   color: #ffffff;
@@ -713,7 +712,7 @@ template {
 
 .booking__per-room {
   font-style: normal;
-  font-weigth: normal;
+  font-weight: normal;
   font-size: 12px;
   line-height: 7px;
 }
@@ -734,7 +733,7 @@ template {
           justify-content: space-between;
   margin-bottom: 8px;
   font-style: normal;
-  font-weigth: normal;
+  font-weight: normal;
   font-size: 12px;
   line-height: 16px;
 }
@@ -758,7 +757,7 @@ template {
 
 .booking__heading {
   font-style: normal;
-  font-weigth: 600;
+  font-weight: 600;
   font-size: 18px;
   line-height: 31px;
 }
@@ -775,7 +774,7 @@ template {
           justify-content: space-between;
   color: inherit;
   text-decoration: none;
-  font-weigth: 600;
+  font-weight: 600;
   font-size: 18px;
   line-height: 26px;
 }
@@ -910,7 +909,7 @@ template {
   .container {
     max-width: 85%;
   }
-  .container-top {
+.container {
     padding-top: 25px;
     padding-bottom: 18px;
   }
