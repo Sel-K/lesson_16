@@ -407,7 +407,7 @@ template {
           justify-content: space-between;
   color: #ffffff;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 .navbar-menu__link {
@@ -523,7 +523,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .hotel-info__offer {
@@ -534,6 +534,8 @@ template {
 .hotel-info__name {
   margin-top: 4px;
   margin-bottom: 0;
+  text-transform: uppercase;
+
 }
 
 .hotel-info__description {
@@ -561,12 +563,31 @@ template {
   font-size: 12px;
   line-height: 15px;
 }
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
-
 .offer {
   font-size: 10px;
   line-height: 12px;
@@ -598,8 +619,8 @@ template {
 .swiper-container {
   width: 100%;
   height: 450px;
-  position: relative;
   border-radius: 8px;
+  position: relative;
 }
 
 .swiper-container:after {
@@ -646,6 +667,140 @@ template {
   background-image: url(../img/chevron-left.svg);
 }
 
+.booking {
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+  font-family: Nunito;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__start {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.booking__pricetag {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.booking__per-room {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 7px;
+}
+
+.booking__room {
+  margin-top: 4px;
+}
+
+.booking__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__description {
+  margin-left: 9px;
+}
+
+.booking__call-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.booking__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.booking__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.booking__num {
+  margin-left: 8px;
+}
+
+.booking__button {
+  width: 100%;
+  min-height: 42px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.map {
+  width: 350px;
+  height: 213px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -679,7 +834,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 731px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -754,7 +909,7 @@ template {
   .container {
     max-width: 85%;
   }
-  -top {
+.container {
     padding-top: 25px;
     padding-bottom: 18px;
   }

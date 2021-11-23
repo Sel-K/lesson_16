@@ -7,8 +7,14 @@ var mySwiper = new Swiper('.swiper-container', {
       prevEl: '.slider-button--prev',
     },
     keyboard: {
+<<<<<<< HEAD
+        enabled: true,
+        onlyInViewport: false,
+    },
+=======
       enabled: true,
       onlyInViewport: false,
   },
+>>>>>>> master
     effect: 'cube',
   });
