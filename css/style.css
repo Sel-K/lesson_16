@@ -407,7 +407,7 @@ template {
           justify-content: space-between;
   color: #ffffff;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 .navbar-menu__link {
@@ -523,7 +523,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .hotel-info__offer {
@@ -582,7 +582,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid pink;
 }
 
 .stars {
@@ -676,6 +675,7 @@ template {
   width: 350px;
   min-height: 210px;
   padding: 28px;
+  font-family: Nunito;
 }
 
 .booking__info {
@@ -701,21 +701,21 @@ template {
 .booking__start {
   font-weight: normal;
   font-size: 10px;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 .booking__pricetag {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 36px;
 }
 
 .booking__per-room {
   font-style: normal;
   font-weigth: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 7px;
 }
 
 .booking__room {
@@ -760,7 +760,7 @@ template {
   font-style: normal;
   font-weigth: 600;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 31px;
 }
 
 .booking__number {
@@ -777,7 +777,7 @@ template {
   text-decoration: none;
   font-weigth: 600;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 .booking__num {
@@ -786,7 +786,7 @@ template {
 
 .booking__button {
   width: 100%;
-  min-height: 45px;
+  min-height: 42px;
   border-radius: 4px;
   background-color: #EC1F46;
   border: none;
@@ -800,7 +800,6 @@ template {
 .map {
   width: 350px;
   height: 213px;
-  background-color: #f5f37c;
 }
 
 @media (max-width: 1200px) {
