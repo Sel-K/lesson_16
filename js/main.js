@@ -10,5 +10,5 @@ var mySwiper = new Swiper('.swiper-container', {
       enabled: true,
       onlyInViewport: false,
   },
-    effect: 'cube',
+    effect: 'flip',
   });
