@@ -42,13 +42,40 @@
     .map
         width: 340px
         overflow: hidden
-@media (max-width: 751px)
+@media (max-width: 768px)
     .container
-        max-width: 576px
         width: 92%
+    .navbar
+        &-top
+            padding-bottom: 29px
+        &-menu
+            justify-content: space-around
+    .breadcrumb
+        &-list
+            padding-top: 21px
+            padding-bottom: 24px
+    .search
+        margin-right: 10%
+        max-width: 361px
+    .rating
+        margin-top: 8px
+    .booking
+        padding: 27px 23px
+        &__info
+            margin-bottom: 9px
+@media (max-width: 576px)
+    .container
+        max-width: 506px
+    .logo
+        width: 99px
     .navbar
         &__search, &-menu, &__user
             display: none
+        &-top
+            padding-top: 24px
+    .hotel
+        &__slider
+            margin-bottom: 20px
     .menu
         &-button
             display: flex
@@ -84,7 +111,7 @@
                 order: -1
                 margin-left: 0
     .slider
-        height: 350px
+        height: 250px
     .hotel
         &-right
             flex-direction: column
@@ -93,14 +120,6 @@
         width: 100%
     .map
         width: 100%
-@media (max-width: 576px)
-    .logo
-        width: 99px
-    .slider
-        height: 250px
-    .hotel
-        &__slider
-            margin-bottom: 20px
 @media (max-width: 322px)
     .container
         max-width: 88%
