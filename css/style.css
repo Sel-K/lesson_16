@@ -16,6 +16,14 @@ body {
 
 img {
   max-width: 100%;
+  margin: -2px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -375,8 +383,8 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 31px;
+  padding-top: 42px;
+  padding-bottom: 30px;
 }
 
 .navbar-top__menu-button {
@@ -561,7 +569,8 @@ template {
 
 .hotel-description {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
 }
 
 .hotel-grid {
@@ -809,6 +818,12 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  padding: 99px 0 72px 0;
+  background-image: url(../img/bgimage-newsletter.jpg);
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -904,7 +919,7 @@ template {
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 600px) {
   .container {
     max-width: 506px;
   }
@@ -993,12 +1008,12 @@ template {
   }
 }
 
-@media (max-width: 322px) {
+@media (max-width: 400px) {
   .container {
     max-width: 88%;
   }
   .navbar-top {
-    padding-top: 24px;
+    padding-top: 23px;
     padding-bottom: 20px;
   }
   .breadcrumb-list {
@@ -1018,6 +1033,12 @@ template {
   }
   .hotel-info__description {
     margin-top: 2px;
+  }
+  .stars {
+    width: 65px;
+  }
+  .stars-image {
+    padding-right: 2px;
   }
   .slider {
     height: 179px;
