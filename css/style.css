@@ -16,7 +16,6 @@ body {
 
 img {
   max-width: 100%;
-  margin: -2px;
 }
 
 iframe {
@@ -598,6 +597,12 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.stars-image {
+  margin: -1px;
 }
 
 .offer {
@@ -919,7 +924,7 @@ template {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .container {
     max-width: 506px;
   }
