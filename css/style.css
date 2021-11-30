@@ -826,7 +826,6 @@ template {
 .newsletter {
   position: relative;
   padding: 80px 0 65px 0;
-  background-image: url(../img/bgimage-newsletter.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -855,7 +854,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 731px;
+  min-width: 731px;
   margin: auto;
 }
 
@@ -877,7 +876,7 @@ template {
 .subscribe {
   position: relative;
   width: 351px;
-  height: 55px;
+  min-height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -897,7 +896,8 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-width: 65px;
+  width: 65px;
+  height: 100%;
   right: 0;
   top: 0;
   height: 100%;
@@ -937,7 +937,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 730px;
+  maxwidth: 730px;
   margin: 45px auto 0;
   padding: 0 62px 27px;
   background-color: #ffffff;

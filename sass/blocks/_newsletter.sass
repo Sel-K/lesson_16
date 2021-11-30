@@ -1,7 +1,7 @@
 .newsletter
     position: relative
     padding: 80px 0 65px 0
-    background-image: url(../img/bgimage-newsletter.jpg)
+    //background-image: url(../img/bgimage-newsletter.jpg) //убрать коммент если надо убрать паралакс
     background-repeat: no-repeat
     background-position: center
     background-size: cover
@@ -20,7 +20,7 @@
         display: flex
         align-items: center
         justify-content: space-between
-        max-width: 731px
+        min-width: 731px
         margin: auto
     &-title
         color: $light
@@ -36,7 +36,7 @@
 .subscribe
     position: relative
     width: 351px
-    height: 55px
+    min-height: 55px
     border-radius: 4px
     overflow: hidden
     &__input
@@ -52,7 +52,8 @@
         line-height: 18px
     &__button
         position: absolute
-        min-width: 65px
+        width: 65px
+        height: 100%
         right: 0
         top: 0
         height: 100%
