@@ -24,5 +24,5 @@ var hotelSlider = new Swiper('.hotel-slider', {
   });
   $('.newsletter').parallax({
     imageSrc: 'img/bgimage-newsletter.jpg',
-    speed: 0.3,
+    speed: 0.6,
   });
