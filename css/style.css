@@ -826,7 +826,6 @@ template {
 .newsletter {
   position: relative;
   padding: 80px 0 65px 0;
-  background-image: url(../img/bgimage-newsletter.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -855,7 +854,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 731px;
+  min-width: 731px;
   margin: auto;
 }
 
@@ -898,7 +897,7 @@ template {
 .subscribe__button {
   position: absolute;
   width: 65px;
-  max-height: 100%;
+  height: 100%;
   right: 0;
   top: 0;
   height: 100%;

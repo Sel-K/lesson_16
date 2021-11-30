@@ -22,3 +22,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
       onlyInViewport: false,
   },
   });
+  $('.newsletter').parallax({
+    imageSrc: 'img/bgimage-newsletter.jpg',
+    speed: 0.3,
+  });
