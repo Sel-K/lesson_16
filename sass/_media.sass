@@ -21,16 +21,26 @@
             padding-bottom: 30px
         &__search
             margin-left: auto
+            margin-right: 72px
         &-menu
-            padding-top: 22px
+            padding-top: 21px
             padding-bottom: 22px
+            justify-content: space-around
             &__link
                 font-size: 12px
                 line-height: 15px
     .search
         &__input
-            width: 340px
+            width: 339px
+    .breadcrumb
+        &-list
+            padding: 19px 0 27px 0
     .hotel
+        padding-bottom: 58px
+        &-info
+            margin-bottom: 21px
+        &-name
+            padding-top: 2px
         &-grid
             flex-direction: column
         &__slider
@@ -40,11 +50,27 @@
             flex-direction: row
     .booking
         width: 340px
+        padding: 28px 22px
     .map
         width: 340px
         overflow: hidden
+    .newsletter
+        padding: 72px 0 73px 0
+        &-title
+            margin-left: 14px
+            font-weight: 200
+    .subscribe
+        margin-right: 14px
     .reviews
+        padding: 38px 0 70px 0
+        &-title
+            font-size: 30px
+            margin-bottom: 45px
         &-slider
+            &__button
+                top: 47%
+                margin-left: -16px
+                margin-right: -17px
             &__item
                 max-width: 680px
 @media (max-width: 768px)
@@ -52,9 +78,12 @@
         width: 92%
     .navbar
         &-top
-            padding-bottom: 29px
+            padding-bottom: 30px
         &-menu
             justify-content: space-around
+    .search
+        &__input
+            width: 341px
     .breadcrumb
         &-list
             padding-top: 21px
@@ -69,25 +98,35 @@
         &-grid
             flex-direction: column
         &-right
-            flex-direction: column
+            justify-content: space-between
             width: 100%
-            min-height: 450px
         &-slider
             height: 450px
-            margin-bottom: 28px
+            margin-bottom: 30px
+            &__button
+                top: 48%
+                &--prev
+                    left: 28px
             &__item
-                width: 700px        
+                width: 700px
     .booking
-        width: 100%
-        padding: 27px 23px
+        max-width: 100%
+        padding: 28px 23px
         &__info
             margin-bottom: 9px
     .map
-        width: 100%
+        max-width: 100%
     .newsletter
-        padding: 72px 0 73px 0
+        &-title
+            margin-left: 0
+    .subscribe
+        margin-right: 0
     .reviews
         &-slider
+            &__button
+                top: 45%
+                margin-left: -15px
+                margin-right: -17px
             &__item
                 max-width: 580px
 @media (max-width: 650px)
@@ -101,6 +140,9 @@
         &-top
             padding-top: 24px
     .hotel
+        &-right
+            flex-direction: column
+            min-height: 460px
         &-slider
             height: 250px
             &__slider
@@ -181,7 +223,15 @@
             &__description
                 margin-top: 1px
         &-slider
-            height: 179px
+            height: 180px
+            margin-bottom: 20px
+            &__button
+                top: 49%
+                width: 7px
+                height: 7px
+                background-size: 7px
+                &--prev
+                    left: 14px
         &-right
             min-height: 443px
     .stars
@@ -196,9 +246,9 @@
             margin-bottom: 15px
     .map
         height: 175px
-        margin-bottom: 46px
+        margin-bottom: 39px
     .newsletter
-        padding: 55px 0 83px 0
+        padding: 59px 0 82px 0
         &-container
             flex-direction: column
             align-items: flex-start
@@ -223,8 +273,20 @@
             font-size: 14px
             line-height: 18px
     .reviews
+        &-title
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
         &-slider
             &__item
-                padding: 0 30px 30px
+                padding: 0 30px 50px
                 &:after, &:before
                     display: none
+            &__button
+                &--prev
+                    left: 41%
+                &--next
+                    right: 42%
