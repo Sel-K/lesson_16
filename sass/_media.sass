@@ -10,6 +10,10 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
+    .activities
+        .card
+            width: 230px
+            height: 230px
 @media (max-width: 996px)
     .container, .newsletter-container
         max-width: 700px
@@ -36,7 +40,7 @@
         &-list
             padding: 19px 0 27px 0
     .hotel
-        padding-bottom: 58px
+        padding-bottom: 56px
         &-info
             margin-bottom: 21px
         &-name
@@ -59,20 +63,29 @@
         &-title
             margin-left: 14px
             font-weight: 200
-    .subscribe
-        margin-right: 14px
     .reviews
         padding: 38px 0 70px 0
         &-title
             font-size: 30px
             margin-bottom: 45px
         &-slider
+            &__item
+                max-width: 580px
             &__button
-                top: 47%
+                top: 45%
                 margin-left: -16px
                 margin-right: -17px
-            &__item
-                max-width: 680px
+    .activities
+        padding: 63px 0 98px 0
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+        .card
+            width: 340px
+            height: 254px
+            &__title
+                max-width: 203px
 @media (max-width: 768px)
     .container, .newsletter-container
         width: 92%
@@ -129,6 +142,14 @@
                 margin-right: -17px
             &__item
                 max-width: 580px
+    .activities
+        padding-top: 40px
+        padding-bottom: 60px
+        &-wrapper
+            flex-wrap: wrap
+        .card
+            width: 48%
+            height: 255px
 @media (max-width: 650px)
     .container, .newsletter-container
         max-width: 506px
@@ -199,6 +220,13 @@
                     right: 50%
                     margin-right: -65px
                     transform: translate(50%, 0)
+    .activities
+        &-wrapper
+            flex-direction: column
+            flex-wrap: wrap
+        .card
+            width: 100%
+
 @media (max-width: 400px)
     .container
         max-width: 88%
@@ -273,6 +301,7 @@
             font-size: 14px
             line-height: 18px
     .reviews
+        padding-bottom: 50px
         &-title
             font-style: normal
             font-weight: bold
@@ -290,3 +319,12 @@
                     left: 41%
                 &--next
                     right: 42%
+    .activities
+        padding-top: 0
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-top: 0;
+            margin-bottom: 11px;
+        .card
+            width: 100%
