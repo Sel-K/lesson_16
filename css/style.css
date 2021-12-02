@@ -1320,6 +1320,7 @@ template {
   }
   .booking {
     max-width: 100%;
+    margin-right: 15px;
     padding: 28px 23px;
   }
   .booking__info {
