@@ -383,7 +383,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 .navbar-top__menu-button {
@@ -624,7 +624,7 @@ template {
 
 .hotel-slider__button {
   position: absolute;
-  top: 50%;
+  top: 47%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 70;
@@ -639,12 +639,12 @@ template {
 }
 
 .hotel-slider__button--next {
-  right: 5px;
+  right: 1px;
   background-image: url(../img/chevron-right.svg);
 }
 
 .hotel-slider__button--prev {
-  left: 18px;
+  left: 32px;
   background-image: url(../img/chevron-left.svg);
 }
 
@@ -964,6 +964,7 @@ template {
   position: absolute;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .reviews-slider__button {
@@ -1045,12 +1046,14 @@ template {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 155px;
   margin: auto;
   text-align: justify;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
+  overflow-y: auto;
 }
 
 .activities {
@@ -1247,14 +1250,14 @@ template {
     margin-right: -17px;
   }
   .activities {
-    padding: 63px 0 98px 0;
+    padding: 78px 0 98px 0;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .activities__card {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   .activities .card {
     width: 340px;
@@ -1262,6 +1265,7 @@ template {
   }
   .activities .card__title {
     max-width: 203px;
+    margin-bottom: 58px;
   }
 }
 
@@ -1284,7 +1288,7 @@ template {
     padding-bottom: 24px;
   }
   .search {
-    margin-right: 10%;
+    margin-right: 2%;
     max-width: 361px;
   }
   .rating {
@@ -1357,7 +1361,7 @@ template {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 661px) {
   .container, .newsletter-container {
     max-width: 506px;
   }
@@ -1531,6 +1535,7 @@ template {
   }
   .booking {
     padding: 25px;
+    margin-right: 0;
   }
   .booking__info {
     margin-bottom: 10px;
