@@ -1056,6 +1056,10 @@ template {
   overflow-y: auto;
 }
 
+.reviews-slider__text::-webkit-scrollbar {
+  width: 0;
+}
+
 .activities {
   padding: 71px 0 98px 0;
 }
