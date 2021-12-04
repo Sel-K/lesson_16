@@ -29,6 +29,7 @@
                 position: absolute
                 background-image: url(../img/quote-left.svg)
                 background-repeat: no-repeat
+                z-index: 1
             &:after
                 content: ''
                 width: 70px
@@ -38,7 +39,7 @@
                 position: absolute
                 background-image: url(../img/quote-right.svg)
                 background-repeat: no-repeat
-                z-index: -1
+                z-index: 1
         &__button
             position: absolute
             top: 41%
@@ -96,6 +97,7 @@
             font-weight: normal
             font-size: 12px
             line-height: 160%
+            z-index: 2
             overflow-y: auto
             &::-webkit-scrollbar
                 width: 0
