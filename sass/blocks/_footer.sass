@@ -34,6 +34,13 @@
             grid-column: span 2
         &-form
             grid-column: span 2
+    &__end-info
+        grid-row-start: 5
+        grid-row-end: 6
+        grid-column-start: 2
+        grid-column-end: 5
+        align-self: center;
+        //grid-column: span 4;
     &__form
         display: flex
         align-items: center
@@ -43,6 +50,12 @@
         padding: 0
         margin: 0
         list-style: none
+        &-flex
+            display: flex
+            flex-direction: column
+        &-end
+            display: flex
+            flex-direction: row
     &__title
         font-style: normal
         font-weight: bold
@@ -58,24 +71,32 @@
             margin-top: 11px
     &__item
         display: flex
-        align-items: flex-start
+        align-items: center
         font-style: normal
         font-weight: normal
         font-size: 14px
         line-height: 160%
         color: $footer-text-color
+        &-end
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
         &--mmb-2
             margin-bottom: 20px
     &__icon
         &-wrapper
             min-width: 40px
-            margin-bottom: 19px
+            //margin-bottom: 19px
+            margin: 19px 0 10px 0
     &__text
         color: $footer-text-color
         margin-bottom: 22px
     &__link
         text-decoration: none
         color: inherit
+        &-end
+            margin-right: 15px
     &__input
         background-color: $light
         border-radius: 4px
@@ -111,5 +132,11 @@
         font-size: 12px
         line-height: 15px
         color: $footer-note-color
-
-
+    &__end-info
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin: 74px 0 45px 0
+    &__end-pay
+        width: 136px
+        height: 22px

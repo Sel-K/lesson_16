@@ -1227,6 +1227,18 @@ template {
   grid-column: span 2;
 }
 
+.footer__end-info {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1245,6 +1257,26 @@ template {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.footer__ul-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__ul-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .footer__title {
@@ -1272,14 +1304,21 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+}
+
+.footer__item-end {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__item--mmb-2 {
@@ -1288,7 +1327,7 @@ template {
 
 .footer__icon-wrapper {
   min-width: 40px;
-  margin-bottom: 19px;
+  margin: 19px 0 10px 0;
 }
 
 .footer__text {
@@ -1299,6 +1338,10 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link-end {
+  margin-right: 15px;
 }
 
 .footer__input {
@@ -1344,6 +1387,25 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E5E5E5;
+}
+
+.footer__end-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 74px 0 45px 0;
+}
+
+.footer__end-pay {
+  width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
