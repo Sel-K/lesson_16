@@ -26,3 +26,8 @@ var hotelSlider = new Swiper('.hotel-slider', {
     imageSrc: 'img/bgimage-newsletter.jpg',
     speed: 0.6,
   });
+  var menuButton = document.querySelector('.menu-button');
+  menuButton.addEventListener('click', function(){
+    console.log('clik!!');
+    document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible')
+  });
