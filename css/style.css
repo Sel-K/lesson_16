@@ -1159,7 +1159,7 @@ template {
   background-color: #0A223D;
   color: #ffffff;
   padding-top: 108px;
-  padding-bottom: 46px;
+  padding-bottom: 33px;
 }
 
 .footer-wrapper {
@@ -1297,7 +1297,7 @@ template {
 }
 
 .footer__title--mb-3 {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .footer__title--mt-2 {
@@ -1326,17 +1326,25 @@ template {
 }
 
 .footer__item--mmb-2 {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .footer__icon-wrapper {
   min-width: 40px;
-  margin: 19px 0 10px 0;
+  margin: 19px 0 10px 4px;
+}
+
+.footer__icon__call {
+  padding-bottom: 10px;
+}
+
+.footer__icon__mail {
+  padding-top: 9px;
 }
 
 .footer__text {
   color: #BDBDBD;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
 }
 
 .footer__link {
@@ -1354,9 +1362,14 @@ template {
   border: none;
   padding: 0 23px;
   height: 50px;
+  margin-top: 5px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__message {
@@ -1369,6 +1382,10 @@ template {
       flex-basis: 100%;
   margin-bottom: 23px;
   resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {
@@ -1404,7 +1421,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 74px 0 45px 0;
+  margin: 74px 0 12px 0;
 }
 
 .footer__end-pay {
@@ -1537,7 +1554,7 @@ template {
   }
   .activities .card__title {
     max-width: 203px;
-    margin-bottom: 58px;
+    margin-bottom: 18px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
@@ -1948,7 +1965,7 @@ template {
     padding-bottom: 30px;
   }
   .breadcrumb-list {
-    padding-top: 27px;
+    padding-top: 21px;
     padding-bottom: 16px;
   }
   .hotel {
