@@ -2,7 +2,7 @@
     background-color: $dark
     color: $light
     padding-top: 108px
-    padding-bottom: 46px
+    padding-bottom: 33px
     &-wrapper
         display: grid
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -22,6 +22,7 @@
             align-items: center
             justify-content: space-between
             min-width: 83px
+            
         &-network
             display: flex
             align-items: start
@@ -66,7 +67,7 @@
         &--inline
             margin: 0 43px 0 0
         &--mb-3
-            margin-bottom: 32px
+            margin-bottom: 27px
         &--mt-2
             margin-top: 11px
     &__item
@@ -83,15 +84,19 @@
             font-size: 12px
             line-height: 15px
         &--mmb-2
-            margin-bottom: 20px
+            margin-bottom: 11px
     &__icon
         &-wrapper
             min-width: 40px
             //margin-bottom: 19px
-            margin: 19px 0 10px 0
+            margin: 19px 0 10px 4px
+        &__call
+            padding-bottom: 10px
+        &__mail
+            padding-top: 9px
     &__text
         color: $footer-text-color
-        margin-bottom: 22px
+        margin-bottom: 8px
     &__link
         text-decoration: none
         color: inherit
@@ -103,8 +108,13 @@
         border: none
         padding: 0 23px
         height: 50px
+        margin-top: 5px
         margin-bottom: 15px
         flex-basis: 47%
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__message
         height: 123px
         background-color: $light
@@ -114,6 +124,10 @@
         flex-basis: 100%
         margin-bottom: 23px
         resize: none
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__button
         min-width: 160px
         min-height: 50px
@@ -136,7 +150,7 @@
         display: flex
         flex-direction: row
         justify-content: space-between
-        margin: 74px 0 45px 0
+        margin: 74px 0 12px 0
     &__end-pay
         width: 136px
         height: 22px
