@@ -1378,6 +1378,16 @@ template {
   padding-bottom: 10px;
 }
 
+.footer__icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer__icon__mail {
   padding-top: 9px;
 }
@@ -1462,7 +1472,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 74px 0 12px 0;
+  margin: 74px 0 12px 129px;
 }
 
 .footer__end-pay {
