@@ -170,7 +170,7 @@
                             </a>
                         </div>
                         <!-- /.booking__call-center -->
-                        <button class="button booking__button">View Other Options</button>
+                        <button data-toggle="modal" class="button booking__button">View Other Options</button>
                     </div>
                     <!-- /.booking -->
                     <div class="map">
@@ -191,7 +191,7 @@
                 subscribe to our 
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="send.php" class="subscribe newsletter__subscribe">
+            <form class="subscribe newsletter__subscribe">
                 <input type="text" class="subscribe__input" placeholder="Your email address">
                 <button class="subscribe__button">Send</button>
             </form>
@@ -453,7 +453,7 @@
                 <div class="footer__contact-details">
                     <h3 class="footer__title footer__title--mb-3 footer__title--mt-2">Contact Details</h3>
                     <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-                    <ul class="footer__ul footer__ul-flex">
+                    <ul class="footer__ul footer__ul-flex footer__ul-flex--details">
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">                   <img class="footer__icon" src="img/icon/location.svg" alt="Icon: Location">
                             </div>
@@ -487,11 +487,11 @@
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
-                    <h3 class="footer__title footer__title--mb-3 ">Send us a message</h3>
+                    <h3 class="footer__title footer__title--mb-4 ">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
                         <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+                        <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button> 
                         <span class="footer__info">* Required Fields</span>                      
                     </form>
@@ -516,6 +516,28 @@
         </div>
         <!-- /.container -->
     </footer>
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/icon/close.svg" alt="Icon: Close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3 ">BOOKING</h3>
+                <form action="send.php" method="POST" class="modal__form">
+                    <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+                    <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+                    <input type="text" class="input modal__input" placeholder="Email*" name="email">
+                    <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+                    <button class="button modal__button" type="submit">Send</button> 
+                    <span class="modal__info">* Required Fields</span>                      
+                    </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
