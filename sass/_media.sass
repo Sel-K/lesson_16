@@ -217,7 +217,8 @@
         &__form
             max-width: 541px
         &__input
-            flex-basis: 47%
+            &-group
+                flex-basis: 47%
         &__end-info
             margin: 9px 0 12px 3px
     .modal
@@ -386,7 +387,11 @@
                 grid-row: 7
                 grid-column: 1
         &__input
-            flex-basis: 100%
+            &-group
+                flex-basis: 100%
+                margin-bottom: 0
+        &__message
+            margin-top: 17px
         &__ul
             &-end
                 flex-direction: row
@@ -539,6 +544,7 @@
             font-weight: normal
             font-size: 12px
             line-height: 15px
+            margin-top: 0
             margin-bottom: 15px
         &__input
             width: 100%
@@ -556,7 +562,7 @@
                 margin-bottom: 28px
             &--mb-4
                 margin-top: 29px
-                margin-bottom: 10px
+                margin-bottom: 16px
         &__icon
             &-wrapper
                 min-width: 34px
@@ -570,6 +576,11 @@
             justify-content: start
             flex-wrap: wrap
             flex-direction: row-reverse
+        &__input
+            margin-top: 0px
+            margin-bottom: 14px
+            &-group
+                margin: 0
         &__button
             order: 1
         &__info
