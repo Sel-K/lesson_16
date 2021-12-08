@@ -80,10 +80,6 @@ $(document).ready(function(){
     $('.tel').mask('+7(999) 999-99-99', {placeholder: "+_(___)___-__-__"});
   });
 
-//для открытия стронних ссылок в новой вкладке
-  $(document).ready(function() {
-    $('a[rel=ext]').attr('target', '_blank');
-});
 });
 
 
