@@ -69,15 +69,17 @@ $(document).ready(function(){
         },
         phone: {
           required: "Please enter your phone number",
+          phone: "Please use numbers only"
         },
       }
     });
   });
 
-  //Маска
+  //Маска для номеров телефонов и типа подсказка поля
   $(document).ready(function(){
-    $('.tel').mask('+7(999) 999-99-99');
+    $('.tel').mask('+7(999) 999-99-99', {placeholder: "+_(___)___-__-__"});
   });
+
 });
 
 
