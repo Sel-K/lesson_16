@@ -809,7 +809,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .booking__heading {
@@ -1438,7 +1438,7 @@ template {
 }
 
 .footer__input {
-  margin-top: 5px;
+  margin-top: 16px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1540,6 +1540,10 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__close {
@@ -1780,7 +1784,7 @@ template {
     padding-bottom: 24px;
   }
   .search {
-    margin-right: 2%;
+    margin-right: 10%;
     max-width: 361px;
   }
   .rating {
@@ -1822,6 +1826,9 @@ template {
   .booking__info {
     margin-bottom: 9px;
   }
+  .booking__button {
+    padding: 13px;
+  }
   .map {
     max-width: 100%;
   }
@@ -1831,17 +1838,24 @@ template {
   .subscribe {
     margin-right: 0;
   }
+  .reviews {
+    padding: 38px 0 0 0;
+  }
   .reviews-slider__button {
-    top: 45%;
+    top: 50%;
     margin-left: -15px;
     margin-right: -17px;
   }
   .reviews-slider__item {
     max-width: 580px;
+    padding: 0px 62px 45px;
   }
   .activities {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 81px 0 47px 0;
+  }
+  .activities__title {
+    margin-top: 42px;
+    margin-bottom: 54px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1851,9 +1865,43 @@ template {
     width: 48%;
     height: 255px;
   }
+  .footer {
+    padding-top: 71px;
+    padding-bottom: 20px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 46px;
+    grid-column-gap: 11px;
+  }
+  .footer__logo {
+    width: 96px;
+  }
+  .footer__social-network {
+    margin: 13px 0 0 0;
+  }
+  .footer__title--mt-2 {
+    margin-top: 15px;
+  }
+  .footer__title--mb-4 {
+    margin: 0 0 20px 0;
+  }
+  .footer__title--inline {
+    margin: 0 34px 0 0;
+  }
+  .footer__legal {
+    margin-left: 55px;
+  }
+  .footer__form {
+    max-width: 541px;
+  }
   .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .footer__end-info {
+    margin: 9px 0 12px 3px;
   }
   .modal__dialog {
     max-width: 378px;
@@ -2101,16 +2149,20 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__ul-end {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     row-gap: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
   .footer__end-info {
     -ms-grid-row: 8;
@@ -2121,6 +2173,13 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 9px 0 12px 0;
+  }
+  .footer__end-pay {
+    -ms-flex-item-align: self-end;
+        -ms-grid-row-align: self-end;
+        align-self: self-end;
+    margin-right: 14px;
   }
   .footer__title {
     margin: 0 0 14px 0;
@@ -2276,8 +2335,10 @@ template {
   }
   .footer {
     padding-top: 70px;
-    padding-bottom: 23px;
-    grid-row-gap: 37px;
+    padding-bottom: 25px;
+  }
+  .footer-wrapper {
+    grid-row-gap: 29px;
   }
   .footer__social-network {
     -webkit-box-orient: vertical;
@@ -2295,6 +2356,9 @@ template {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .footer__social-network {
+    margin: 0;
   }
   .footer__icon-wrapper {
     width: 24px;
@@ -2314,7 +2378,11 @@ template {
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    margin-top: 5px;
     margin-bottom: 12px;
+  }
+  .footer__title {
+    margin: 2px 0 15px 0;
   }
   .footer__title--mb-3 {
     margin-top: 11px;
@@ -2334,7 +2402,7 @@ template {
     margin-bottom: 20px;
   }
   .footer__link-end {
-    margin-right: 7px;
+    margin-right: 9px;
   }
   .footer__form {
     -webkit-box-pack: start;
@@ -2365,6 +2433,15 @@ template {
   }
   .footer__ul-end {
     margin-bottom: 6px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__end-pay {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin: 0;
   }
   .modal__close {
     width: 13px;

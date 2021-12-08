@@ -138,7 +138,7 @@
             padding-top: 21px
             padding-bottom: 24px
     .search
-        margin-right: 2%
+        margin-right: 10%
         max-width: 361px
     .rating
         margin-top: 8px
@@ -164,6 +164,8 @@
         padding: 28px 23px
         &__info
             margin-bottom: 9px
+        &__button
+            padding: 13px
     .map
         max-width: 100%
     .newsletter
@@ -172,24 +174,52 @@
     .subscribe
         margin-right: 0
     .reviews
+        padding: 38px 0 0 0
         &-slider
             &__button
-                top: 45%
+                top: 50%
                 margin-left: -15px
                 margin-right: -17px
             &__item
                 max-width: 580px
+                padding: 0px 62px 45px
     .activities
-        padding-top: 40px
-        padding-bottom: 60px
+        padding: 81px 0 47px 0
+        &__title
+            margin-top: 42px
+            margin-bottom: 54px
         &-wrapper
             flex-wrap: wrap
         .card
             width: 48%
             height: 255px
     .footer
+        padding-top: 71px
+        padding-bottom: 20px
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
+            grid-row-gap: 46px
+            grid-column-gap: 11px
+        &__logo
+            width: 96px
+        &__social
+            &-network
+                margin: 13px 0 0 0
+        &__title
+            &--mt-2
+                margin-top: 15px
+            &--mb-4
+                margin: 0 0 20px 0
+            &--inline
+                margin: 0 34px 0 0
+        &__legal
+            margin-left: 55px
+        &__form
+            max-width: 541px
         &__input
-            flex-basis: 100%
+            flex-basis: 47%
+        &__end-info
+            margin: 9px 0 12px 3px
     .modal
         &__dialog
             max-width: 378px
@@ -355,18 +385,25 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+        &__input
+            flex-basis: 100%
         &__ul
             &-end
                 flex-direction: row
-                justify-content: space-between
+                justify-content: end
                 row-gap: 25px
-                margin-bottom: 35px
+                margin-bottom: 15px
         &__end-info
             grid-row: 8
             grid-column: 1
             flex-direction: column
+            margin: 9px 0 12px 0
+        &__end-pay
+            align-self: self-end
+            margin-right: 14px
         &__title
             margin: 0 0 14px 0
+        
 @media (max-width: 400px)
     .container
         max-width: 88%
@@ -478,9 +515,9 @@
             width: 100%
     .footer
         padding-top: 70px
-        padding-bottom: 23px
+        padding-bottom: 25px
         &-wrapper
-        grid-row-gap: 37px
+            grid-row-gap: 29px
         &__social
             &-network
                 flex-direction: column
@@ -489,6 +526,9 @@
             order: 0
         &__legal
             order: 1
+        &__social
+            &-network
+                margin: 0
         &__icon
             &-wrapper
                 width: 24px
@@ -506,8 +546,10 @@
             font-weight: normal
             font-size: 12px
             line-height: 15px
+            margin-top: 5px
             margin-bottom: 12px
         &__title
+            margin: 2px 0 15px 0
             &--mb-3
                 margin-top: 11px
             &--mt-2
@@ -523,7 +565,7 @@
                 margin-bottom: 20px
         &__link
             &-end
-                margin-right: 7px
+                margin-right: 9px
         &__form
             justify-content: start
             flex-wrap: wrap
@@ -542,6 +584,10 @@
                     row-gap: 20px
             &-end
                 margin-bottom: 6px
+                justify-content: space-between
+        &__end-pay
+            align-self: start
+            margin: 0
     .modal
         &__close
             width: 13px
