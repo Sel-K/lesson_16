@@ -69,15 +69,21 @@ $(document).ready(function(){
         },
         phone: {
           required: "Please enter your phone number",
+          phone: "Please use numbers only"
         },
       }
     });
   });
 
-  //Маска
+  //Маска для номеров телефонов и типа подсказка поля
   $(document).ready(function(){
-    $('.tel').mask('+7(999) 999-99-99');
+    $('.tel').mask('+7(999) 999-99-99', {placeholder: "+_(___)___-__-__"});
   });
+
+//для открытия стронних ссылок в новой вкладке
+  $(document).ready(function() {
+    $('a[rel=ext]').attr('target', '_blank');
+});
 });
 
 
