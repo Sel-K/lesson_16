@@ -1917,7 +1917,7 @@ template {
     margin: 9px 0 12px 3px;
   }
   .modal__dialog {
-    max-width: 378px;
+    width: 400px;
     padding: 35px 43px 31px 43px;
   }
   .modal__input, .modal__message {
@@ -1930,6 +1930,7 @@ template {
     width: 100%;
   }
   .modal__info {
+    margin-top: 10px;
     text-align: center;
   }
 }
