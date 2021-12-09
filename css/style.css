@@ -1331,6 +1331,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .footer__ul {
@@ -1455,6 +1456,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  position: relative;
 }
 
 .footer__message {
@@ -1577,6 +1579,7 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  position: relative;
 }
 
 .modal__message {
@@ -1908,8 +1911,10 @@ template {
   }
   .footer__form {
     max-width: 541px;
+    row-gap: 15px;
   }
   .footer__input-group {
+    margin-bottom: 0;
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -1920,7 +1925,13 @@ template {
     width: 400px;
     padding: 35px 43px 31px 43px;
   }
-  .modal__input, .modal__message {
+  .modal__message {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .modal__input {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

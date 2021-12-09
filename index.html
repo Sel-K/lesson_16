@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -187,12 +188,12 @@
     <!-- /.hotel -->
     <section class="newsletter">
         <div class="newsletter-container">
-            <h2 class="newsletter-title newsletter__title">
+            <h2 class="newsletter-title newsletter__title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 subscribe to our 
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address">
+            <form class="subscribe newsletter__subscribe form">
+                <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
                 <button class="subscribe__button">Send</button>
             </form>
         </div>
@@ -319,33 +320,33 @@
                 <div class="activities-wrapper"><!--Обертка для карточек --> 
                     <div class="card activities__card">
                         <img src="img/activities/activities_1.jpg" alt="The curious corner of chamarel" class="card__image">
-                        <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
+                        <h3 class="card__title" data-aos="zoom-in" data-aos-duration="1500">The curious corner of&nbsp;chamarel</h3>
                         <!-- /.activities__title /заголовок в карточке -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button" data-aos="zoom-in" data-aos-duration="1500">Book Now</button>
                         <!-- /.кнопка в карточке-->
                     </div>
                     <!-- /.card /блок с картинкой-->
                     <div class="card activities__card">
                         <img src="img/activities/activities_2.jpg" alt="Gymkhana club golf course" class="card__image">
-                        <h3 class="card__title">Gymkhana club golf course</h3>
+                        <h3 class="card__title" data-aos="zoom-in" data-aos-duration="1500">Gymkhana club golf course</h3>
                         <!-- /.activities__title /заголовок в карточке -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button" data-aos="zoom-in" data-aos-duration="1500">Book Now</button>
                         <!-- /.кнопка в карточке-->
                     </div>
                     <!-- /.card /блок с картинкой-->
                     <div class="card activities__card">
                         <img src="img/activities/activities_3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-                        <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
+                        <h3 class="card__title" data-aos="zoom-in" data-aos-duration="1500">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
                         <!-- /.activities__title /заголовок в карточке -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button" data-aos="zoom-in" data-aos-duration="1500">Book Now</button>
                         <!-- /.кнопка в карточке-->
                     </div>
                     <!-- /.card /блок с картинкой-->
                     <div class="card activities__card">
                         <img src="img/activities/activities_4.jpg" alt="The blue marine discovery quest" class="card__image">
-                        <h3 class="card__title">The blue marine discovery quest</h3>
+                        <h3 class="card__title" data-aos="zoom-in" data-aos-duration="1500">The blue marine discovery quest</h3>
                         <!-- /.activities__title /заголовок в карточке -->
-                        <button class="card__button">Book Now</button>
+                        <button data-toggle="modal" class="card__button" data-aos="zoom-in" data-aos-duration="1500">Book Now</button>
                         <!-- /.кнопка в карточке-->
                     </div>
                     <!-- /.card /блок с картинкой-->
@@ -489,7 +490,7 @@
                     <h3 class="footer__title footer__title--mb-4 ">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer__form form">
                         <div class="footer__input-group">
-                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+                            <input type="text" class="input footer__input name" placeholder="Your Full Name*" name="name" required>
                         </div>
                         <!-- /.footer__input-group -->
                         <div class="footer__input-group">
@@ -532,7 +533,7 @@
             </a>
             <h3 class="modal__title modal__title--mb-3 ">BOOKING</h3>
                 <form action="send.php" method="POST" class="modal__form form">
-                    <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+                    <input type="text" class="input modal__input name" placeholder="Your Full Name*" name="name" required>
                     <input type="tel" class="input modal__input tel" placeholder="Phone Number*" name="phone" required>
                     <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
                     <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
@@ -548,6 +549,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
