@@ -114,12 +114,12 @@ $(document).ready(function(){
   });
 
   //Подключение анимации на определенный размер окна
-  AOS.init({
-    disable: function() {
-      var maxWidth = 990; //указан максимальный размер экрана
-      return window.innerWidth < maxWidth; //если размер меньше, то возвращает настройки
-    }
-    
+    AOS.init({
+      disable: function(){
+        var maxWidth = 993; //указан максимальный размер экрана
+        return window.innerWidth < maxWidth; //если размер меньше, то возвращает настройки
+        },
+      });
+
+
   });
-  
-});
