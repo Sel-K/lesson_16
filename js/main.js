@@ -67,7 +67,7 @@ $(document).ready(function(){
     modalDialog.removeClass('modal__dialog--visible');
   });
 
-//обработка форм (jquery.validate)
+  //обработка форм (jquery.validate)
   $(".form").each(function(){
     $(this).validate({
       errorClass: "invalid",
@@ -79,6 +79,10 @@ $(document).ready(function(){
         email: {
           required: true,
           email: true,
+        },
+        phone: {
+          required: true,
+          minlength: 11,
         }
       },
       messages: {
@@ -92,6 +96,7 @@ $(document).ready(function(){
         },
         phone: {
           required: "Please enter your phone number",
+          minlenght: "The field must contain 11 digits",
           phone: "Please use numbers only"
         },
       }
@@ -107,7 +112,14 @@ $(document).ready(function(){
   $(document).ready(function () {
     $(".name").attr('maxlength', '25');    
   });
-  AOS.init();
+
+  //Подключение анимации на определенный размер окна
+  AOS.init({
+    disable: function() {
+      var maxWidth = 990; //указан максимальный размер экрана
+      return window.innerWidth < maxWidth; //если размер меньше, то возвращает настройки
+    }
+    
+  });
+  
 });
-
-

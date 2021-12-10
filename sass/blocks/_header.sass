@@ -27,6 +27,8 @@
             color: inherit
             text-decoration: none
             text-transform: uppercase
+            &:hover
+                border-bottom: 1px solid $primary
         &__item
             &--mobile
                 &--visible
@@ -60,10 +62,14 @@
         border: none
         background-color: $primary
         cursor: pointer
+        &:hover
+            background-color: $primary-hover
 .user
     display: flex
     align-items: center
     text-decoration: none
+    &:hover
+        border-bottom: 1px solid $primary
     &__avatar
         width: 41px
         height: 39px
@@ -74,3 +80,4 @@
         line-height: 18px
         color: $text-color
         margin-left: 17px
+        
