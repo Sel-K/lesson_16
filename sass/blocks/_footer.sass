@@ -45,6 +45,7 @@
         align-items: center
         justify-content: space-between
         flex-wrap: wrap
+        margin-top: 32px
         position: relative
     &__ul
         padding: 0
@@ -91,6 +92,7 @@
             margin: 19px 0 10px 4px
         &__call
             padding-bottom: 10px
+            margin-top: -18px
         &-text
             display: flex
             flex-direction: column
@@ -104,17 +106,21 @@
         color: inherit
         &-end
             margin-right: 15px
+    
     &__input
         width: 100%
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
         &-group
-            margin-top: 16px
+            flex-basis: 48%
             margin-bottom: 15px
-            flex-basis: 47%
-            font-style: normal
-            font-weight: normal
-            font-size: 12px
-            line-height: 15px
-            position: relative
+            &-block
+                width: 100%
+                display: flex
+                justify-content: space-betwee
+                column-gap: 29px       
     &__message
         height: 123px
         flex-basis: 100%
