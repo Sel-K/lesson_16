@@ -1879,7 +1879,7 @@ template {
     grid-column: span 3;
   }
   .footer__contact-details {
-    grid-column: span 5;
+    grid-column: span 6;
     -ms-grid-row: 3;
     grid-row: 3;
   }
@@ -1989,12 +1989,15 @@ template {
     max-width: 580px;
     padding: 0px 62px 45px;
   }
+  .reviews-slider__text {
+    height: 116px;
+  }
   .activities {
-    padding: 81px 0 47px 0;
+    padding: 81px 0 49px 0;
   }
   .activities__title {
-    margin-top: 42px;
-    margin-bottom: 54px;
+    margin-top: 39px;
+    margin-bottom: 56px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -2003,6 +2006,7 @@ template {
   .activities .card {
     width: 48%;
     height: 255px;
+    margin-bottom: 21px;
   }
   .footer {
     padding-top: 71px;
@@ -2024,13 +2028,34 @@ template {
     margin-top: 15px;
   }
   .footer__title--mb-4 {
-    margin: 0 0 20px 0;
+    margin: 0 0 35px 0;
   }
   .footer__title--inline {
-    margin: 0 34px 0 0;
+    margin: 0px 41px -2px -13px;
   }
   .footer__legal {
     margin-left: 55px;
+  }
+  .footer__icon-wrapper {
+    min-width: 42px;
+    margin: 11px 0 6px 4px;
+  }
+  .footer__icon__location {
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  .footer__icon__call {
+    padding-bottom: 11px;
+  }
+  .footer__icon__mail {
+    padding-top: 21px;
+  }
+  .footer__text {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  .footer__text:last-child {
+    margin-top: 0;
   }
   .footer__form {
     max-width: 541px;
@@ -2042,14 +2067,20 @@ template {
         flex-basis: 47%;
   }
   .footer__input-group-block {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 15px;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    row-gap: 16px;
+  }
+  .footer__message {
+    margin-bottom: 7px;
   }
   .footer__end-info {
     margin: 9px 0 12px 3px;
+  }
+  .footer__link-end {
+    margin-top: 8px;
   }
   .modal__dialog {
     width: 400px;
@@ -2091,6 +2122,7 @@ template {
     left: 0;
     top: 0;
     right: 0;
+    max-width: 100%;
     z-index: 88;
   }
   .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
@@ -2122,7 +2154,12 @@ template {
     right: 0;
     bottom: 0;
     top: 71px;
+    max-width: 100%;
     padding-top: 20px;
+    overflow-y: auto;
+  }
+  .navbar-bottom::-webkit-scrollbar {
+    width: 0;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2134,9 +2171,6 @@ template {
             flex-direction: column;
     padding-top: 12px;
   }
-  .navbar-menu::-webkit-scrollbar {
-    width: 0;
-  }
   .navbar-menu__item {
     margin-top: 18px;
   }
@@ -2145,6 +2179,7 @@ template {
     margin-top: 0;
   }
   .navbar-top {
+    width: 100%;
     padding-top: 24px;
   }
   .hotel-right {
@@ -2353,6 +2388,7 @@ template {
     max-width: 88%;
   }
   .navbar-top {
+    width: 100%;
     padding-top: 23px;
     padding-bottom: 30px;
   }

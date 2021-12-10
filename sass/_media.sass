@@ -128,7 +128,7 @@
             grid-column: span 3
         &__contact
             &-details
-                grid-column: span 5
+                grid-column: span 6
                 grid-row: 3
             &-form
                 grid-column: span 6
@@ -205,16 +205,19 @@
             &__item
                 max-width: 580px
                 padding: 0px 62px 45px
+            &__text
+                height: 116px
     .activities
-        padding: 81px 0 47px 0
+        padding: 81px 0 49px 0
         &__title
-            margin-top: 42px
-            margin-bottom: 54px
+            margin-top: 39px
+            margin-bottom: 56px
         &-wrapper
             flex-wrap: wrap
         .card
             width: 48%
             height: 255px
+            margin-bottom: 21px
     .footer
         padding-top: 71px
         padding-bottom: 20px
@@ -231,11 +234,27 @@
             &--mt-2
                 margin-top: 15px
             &--mb-4
-                margin: 0 0 20px 0
+                margin: 0 0 35px 0
             &--inline
-                margin: 0 34px 0 0
+                margin: 0px 41px -2px -13px
         &__legal
             margin-left: 55px
+        &__icon
+            &-wrapper
+                min-width: 42px
+                margin: 11px 0 6px 4px
+            &__location
+                padding-top: 5px
+                padding-left: 5px
+            &__call
+                padding-bottom: 11px
+            &__mail
+                padding-top: 21px
+        &__text
+            margin-top: 6px
+            margin-bottom: 10px
+            &:last-child
+                margin-top: 0
         &__form
             max-width: 541px
             row-gap: 15px
@@ -244,10 +263,14 @@
                 margin-bottom: 0
                 flex-basis: 47%
                 &-block
-                    flex-direction: column
-                    row-gap: 15px
+                    flex-direction: row
+                    row-gap: 16px
+        &__message
+            margin-bottom: 7px
         &__end-info
             margin: 9px 0 12px 3px
+        &__link-end
+            margin-top: 8px
     .modal
         &__dialog
             width: 400px
@@ -281,6 +304,7 @@
                 left: 0
                 top: 0
                 right: 0
+                max-width: 100%
                 z-index: 88
         &__user, &__search
             &--mobile
@@ -304,7 +328,11 @@
             right: 0
             bottom: 0
             top: 71px
+            max-width: 100%
             padding-top: 20px
+            overflow-y: auto 
+            &::-webkit-scrollbar
+                width: 0
             &--visible
                 display: block
         &-menu
@@ -315,10 +343,9 @@
                 &--mobile
                     &--visible
                         display: block
-                        margin-top: 0
-                        &::-webkit-scrollbar
-                            width: 0
+                        margin-top: 0                        
         &-top
+            width: 100%
             padding-top: 24px
     .hotel
         &-right
@@ -449,6 +476,7 @@
         max-width: 88%
     .navbar
         &-top
+            width: 100%
             padding-top: 23px
             padding-bottom: 30px
     .breadcrumb
