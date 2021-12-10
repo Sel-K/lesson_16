@@ -21,7 +21,9 @@
             display: flex
             align-items: center
             justify-content: space-between
-            min-width: 83px    
+            min-width: 83px
+            &:hover
+                color: $primary   
         &-network
             display: flex
             align-items: start
@@ -109,9 +111,10 @@
     &__link
         text-decoration: none
         color: inherit
+        &:hover
+            border-bottom: 1px solid $primary
         &-end
             margin-right: 15px
-    
     &__input
         width: 100%
         font-style: normal

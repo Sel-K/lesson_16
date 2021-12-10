@@ -316,6 +316,8 @@
                     &--visible
                         display: block
                         margin-top: 0
+                        &::-webkit-scrollbar
+                            width: 0
         &-top
             padding-top: 24px
     .hotel
@@ -656,8 +658,24 @@
             width: 13px
         &__dialog
             width: 90%
-            padding: 35px 23px 31px 23px
+            height: 95%
+            padding: 22px 23px 29px 23px
+            &__title
+                margin-top: -3px
         &__form
             justify-content: center
+        &__input
+                width: 98%
+                margin-top: 7px
+        &__message
+                width: 100%
+                height: 101px
+                &::-webkit-scrollbar
+                    width: 0
+        &__button
+            min-height: 40px
+            padding: 12px
         &__info
-            margin-top: 10px
+            margin-top: 2px
+            font-size: 10px
+            line-height: 12px
