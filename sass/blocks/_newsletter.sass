@@ -37,27 +37,33 @@
     position: relative
     width: 351px
     min-height: 55px
+    //margin-top: 18px
     border-radius: 4px
     overflow: hidden
     &__input
-        position: absolute
+        //position: absolute
         width: 100%
-        height: 100%
+        //height: 100%
+        height: 55px
         border: none
+        border-radius: 6px 6px 6px 6px
         padding-left: 33px
         padding-right: 75px
         font-style: normal
         font-weight: 300
         font-size: 14px
         line-height: 18px
+        &-invalid
+            position: relative
     &__button
         position: absolute
         width: 66px
-        height: 100%
         right: 0
         top: 0
-        height: 100%
+        //height: 100%
+        height: 55px
         border: none
+        border-radius: 0 6px 6px 0
         background-color: $primary
         color: $light
         font-style: normal;

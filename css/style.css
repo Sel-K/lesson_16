@@ -57,6 +57,7 @@ iframe {
 }
 
 .invalid {
+  position: relative;
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
 }
@@ -734,7 +735,7 @@ template {
   color: #ffffff;
   border-radius: 8px;
   width: 350px;
-  min-height: 210px;
+  max-height: 212px;
   padding: 27px;
   font-family: Nunito;
 }
@@ -961,10 +962,10 @@ template {
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 55px;
   border: none;
+  border-radius: 6px 6px 6px 6px;
   padding-left: 33px;
   padding-right: 75px;
   font-style: normal;
@@ -973,14 +974,18 @@ template {
   line-height: 18px;
 }
 
+.subscribe__input-invalid {
+  position: relative;
+}
+
 .subscribe__button {
   position: absolute;
   width: 66px;
-  height: 100%;
   right: 0;
   top: 0;
-  height: 100%;
+  height: 55px;
   border: none;
+  border-radius: 0 6px 6px 0;
   background-color: #EC1F46;
   color: #ffffff;
   font-style: normal;
@@ -1468,6 +1473,11 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  overflow-y: auto;
+}
+
+.footer__message::-webkit-scrollbar {
+  width: 0;
 }
 
 .footer__info {
@@ -1586,6 +1596,11 @@ template {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
+  overflow-y: auto;
+}
+
+.modal__message::-webkit-scrollbar {
+  width: 0;
 }
 
 .modal__button {
