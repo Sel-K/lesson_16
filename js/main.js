@@ -27,7 +27,7 @@ $(document).ready(function(){
   }); 
   //Паралакс эффект
   $('.newsletter').parallax({
-    imageSrc: 'img/bgimage-newsletter.jpg',
+    imageSrc: 'img/bgimage-newsletter.webp',
     speed: 0.6,
   });
   //открытие бургера менюшки
