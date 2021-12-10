@@ -79,6 +79,10 @@ $(document).ready(function(){
         email: {
           required: true,
           email: true,
+        },
+        phone: {
+          required: true,
+          minlength: 11,
         }
       },
       messages: {
@@ -92,6 +96,7 @@ $(document).ready(function(){
         },
         phone: {
           required: "Please enter your phone number",
+          minlenght: "The field must contain 11 digits",
           phone: "Please use numbers only"
         },
       }
