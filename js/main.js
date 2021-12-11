@@ -123,13 +123,9 @@ $(document).ready(function() {
       AOS.init();
     }
   }, true);
-if(window.document.body.clientWidth>993){
+    if(window.document.body.clientWidth>993){
     AOS.init();
   }
-
-
-    
-
 
 
     });//это закрывающая скобка - $(document).ready(function()//
