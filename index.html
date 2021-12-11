@@ -529,7 +529,6 @@
     </footer>
     <div class="modal">
         <div class="modal__overlay">
-
         </div>
         <!-- /.modal__overlay -->
         <div class="modal__dialog">
@@ -537,6 +536,7 @@
                 <img src="img/icon/close.svg" alt="Icon: Close">
             </a>
             <h3 class="modal__title modal__title--mb-3 ">BOOKING</h3>
+            <div class="modal__dialog__wrapper">
                 <form action="send.php" method="POST" class="modal__form form">
                     <input type="text" class="input modal__input name" placeholder="Your Full Name*" name="name" required>
                     <input type="tel" class="input modal__input tel" placeholder="Phone Number*" name="phone" required>
@@ -545,6 +545,8 @@
                     <button class="button modal__button" type="submit">Send</button> 
                     <span class="modal__info">* Required Fields</span>                      
                     </form>
+            </div>
+            <!-- /.modal__dialog__wrapper -->
         </div>
         <!-- /.modal__dialog -->
     </div>
