@@ -33,12 +33,6 @@ iframe {
   height: 50px;
 }
 
-.input:focus {
-  outline: none;
-  -webkit-box-shadow: 0 0 0 3px lightskyblue;
-          box-shadow: 0 0 0 3px lightskyblue;
-}
-
 .message {
   background-color: #ffffff;
   border-radius: 4px;
@@ -60,20 +54,6 @@ iframe {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.button:hover {
-  background-color: #990e28;
-}
-
-.thankyou-info--button:hover {
-  background-color: #990e28;
-}
-
-.thankyou-info--button:focus {
-  outline: none;
-  -webkit-box-shadow: 0 0 0 3px lightskyblue;
-          box-shadow: 0 0 0 3px lightskyblue;
 }
 
 .invalid {
@@ -480,10 +460,6 @@ template {
   text-transform: uppercase;
 }
 
-.navbar-menu__link:hover {
-  border-bottom: 1px solid #EC1F46;
-}
-
 .navbar-menu__item--mobile--visible {
   display: none;
 }
@@ -529,10 +505,6 @@ template {
   cursor: pointer;
 }
 
-.search__button:hover {
-  background-color: #990e28;
-}
-
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,10 +513,6 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-}
-
-.user:hover {
-  border-bottom: 1px solid #EC1F46;
 }
 
 .user__avatar {
@@ -1277,10 +1245,6 @@ template {
   cursor: pointer;
 }
 
-.activities .card__button:hover {
-  background-color: #990e28;
-}
-
 .footer {
   background-color: #0A223D;
   color: #ffffff;
@@ -1330,10 +1294,6 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 83px;
-}
-
-.footer__social-links:hover {
-  color: #EC1F46;
 }
 
 .footer__social-network {
@@ -1448,6 +1408,7 @@ template {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+  letter-spacing: 0.3px;
 }
 
 .footer__item-end {
@@ -1498,10 +1459,6 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
-}
-
-.footer__link:hover {
-  border-bottom: 1px solid #EC1F46;
 }
 
 .footer__link-end {
@@ -1603,7 +1560,7 @@ template {
   left: 50%;
   max-width: 478px;
   height: 486px;
-  padding: 34px 88px 23px 87px;
+  padding: 24px 88px 8px 87px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1640,6 +1597,7 @@ template {
       flex-wrap: wrap;
   font-style: normal;
   font-weight: normal;
+  max-height: 175px;
   font-size: 12px;
   line-height: 15px;
   z-index: 101;
@@ -1724,7 +1682,47 @@ template {
   }
 }
 
-@media (max-width: 996px) {
+@media (min-width: 993px) {
+  .input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 3px lightskyblue;
+            box-shadow: 0 0 0 3px lightskyblue;
+  }
+  .button:hover {
+    background-color: #990e28;
+  }
+  .thankyou-info--button:hover {
+    background-color: #990e28;
+  }
+  .thankyou-info:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0 3px lightskyblue;
+            box-shadow: 0 0 0 3px lightskyblue;
+  }
+  .navbar-menu__link:hover {
+    border-bottom: 1px solid #EC1F46;
+  }
+  .search__button:hover {
+    background-color: #990e28;
+  }
+  .user:hover {
+    border-bottom: 1px solid #EC1F46;
+  }
+  .activities .card__button {
+    background-color: #EC1F46;
+  }
+  .activities .card__button:hover {
+    background-color: #990e28;
+  }
+  .footer__social-links:hover {
+    color: #EC1F46;
+  }
+  .footer__link:hover {
+    border-bottom: 1px solid #EC1F46;
+  }
+}
+
+@media (max-width: 999px) {
   .container, .newsletter-container {
     max-width: 700px;
   }
@@ -1782,7 +1780,7 @@ template {
   }
   .booking {
     width: 340px;
-    padding: 28px 22px;
+    padding: 25px 22px;
   }
   .map {
     width: 340px;
@@ -1960,7 +1958,7 @@ template {
   .booking {
     max-width: 100%;
     margin-right: 15px;
-    padding: 28px 23px;
+    padding: 25px 22px;
   }
   .booking__info {
     margin-bottom: 9px;
@@ -2107,7 +2105,7 @@ template {
   }
 }
 
-@media (max-width: 661px) {
+@media (max-width: 690px) {
   .container, .newsletter-container {
     max-width: 506px;
   }
@@ -2381,6 +2379,9 @@ template {
   .footer__title {
     margin: 0 0 14px 0;
   }
+  .footer__title--inline {
+    margin-right: 38px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2547,6 +2548,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 6px;
+    margin: 0;
   }
   .footer__additional {
     -webkit-box-ordinal-group: 1;
@@ -2557,9 +2559,6 @@ template {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-  }
-  .footer__social-network {
-    margin: 0;
   }
   .footer__icon-wrapper {
     width: 24px;

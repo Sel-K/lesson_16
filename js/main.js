@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  
   //Слайдер в блоке отеля
   var hotelSlider = new Swiper('.hotel-slider', {
     loop: true,
@@ -109,17 +110,23 @@ $(document).ready(function(){
   });
 
   //Ограничение для инпута имени не более 25 знаков
-  $(document).ready(function () {
+  $(document).ready(function(){
     $(".name").attr('maxlength', '25');    
-  });
-
-  //Подключение анимации на определенный размер окна
-  AOS.init({
-    disable: function() {
-      var maxWidth = 990; //указан максимальный размер экрана
-      return window.innerWidth < maxWidth; //если размер меньше, то возвращает настройки
-    }
-    
-  });
+  });  
   
-});
+  //Подключение анимации на определенный размер окна
+  window.addEventListener('resize', function(event){
+    if(window.document.body.clientWidth<993){
+      AOS.init({disable: true});
+      AOS.refresh();
+    }else{
+      AOS.init();
+    }
+  }, true);
+    if(window.document.body.clientWidth>993){
+    AOS.init();
+  }
+
+
+    });//это закрывающая скобка - $(document).ready(function()//
+  
