@@ -420,7 +420,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
 }
 
 .navbar-top__menu-button {
@@ -439,7 +439,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 31px 0 30px 0;
+  padding: 31px 0 31px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,7 +537,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 27px 0;
+  padding: 18px 0 27px 0;
   margin: 0;
   list-style: none;
 }
@@ -555,10 +555,6 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: #333333;
-}
-
-.breadcrumb-list__link:hover {
-  border-bottom: 1px solid #EC1F46;
 }
 
 .hotel {
@@ -1726,6 +1722,9 @@ template {
     -webkit-box-shadow: 0 0 0 1px #EC1F46;
             box-shadow: 0 0 0 1px #EC1F46;
   }
+  .breadcrumb-list__link:hover {
+    border-bottom: 1px solid #EC1F46;
+  }
   .footer__social-links:hover {
     color: #EC1F46;
   }
@@ -2507,7 +2506,7 @@ template {
     line-height: 18px;
   }
   .reviews {
-    padding-bottom: 46px;
+    padding-bottom: 44px;
   }
   .reviews-title {
     font-style: normal;
@@ -2537,7 +2536,9 @@ template {
   }
   .reviews-slider__text {
     width: 97%;
-    height: 266px;
+    height: 268px;
+    text-align: left;
+    letter-spacing: 0.2px;
   }
   .activities {
     padding-top: 0;
