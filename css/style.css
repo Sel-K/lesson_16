@@ -1689,6 +1689,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog--visible {
+    height: 98%;
+  }
 }
 
 @media (min-width: 993px) {
@@ -2107,6 +2110,7 @@ template {
   }
   .modal__dialog {
     width: 400px;
+    height: 84%;
     padding: 35px 43px 31px 43px;
   }
   .modal__message {
