@@ -2397,6 +2397,15 @@ template {
   .footer__title--inline {
     margin-right: 38px;
   }
+  .modal__message {
+    width: 100%;
+  }
+  .modal__dialog {
+    height: 515px;
+  }
+  .modal__dialog::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 @media (max-width: 400px) {
