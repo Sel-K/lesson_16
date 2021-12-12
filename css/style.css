@@ -2585,6 +2585,7 @@ template {
     height: 24px;
   }
   .footer__icon__location {
+    padding-top: 0;
     padding-left: 5px;
   }
   .footer__icon__call {
@@ -2625,7 +2626,7 @@ template {
     margin-bottom: 26px;
   }
   .footer__title--mb-4 {
-    margin-top: 32px;
+    margin-top: 29px;
     margin-bottom: 15px;
   }
   .footer__title--inline {
@@ -2636,7 +2637,9 @@ template {
     margin: 0;
   }
   .footer__text {
+    margin-top: 0;
     margin-bottom: 14px;
+    line-height: 157%;
   }
   .footer__link-end {
     margin: 0;
@@ -2686,7 +2689,7 @@ template {
     row-gap: 3px;
   }
   .footer__ul-flex--details {
-    row-gap: 20px;
+    row-gap: 22px;
   }
   .footer__ul-end {
     margin-bottom: 6px;
