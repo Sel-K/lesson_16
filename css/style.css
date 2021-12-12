@@ -420,7 +420,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
 }
 
 .navbar-top__menu-button {
@@ -439,7 +439,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 31px 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1661,7 +1661,10 @@ template {
   }
   .navbar-top {
     padding-top: 42px;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
+  }
+  .navbar-menu {
+    padding: 31px 0 30px 0;
   }
   .hotel-slider {
     width: 590px;
@@ -1700,13 +1703,14 @@ template {
             box-shadow: 0 0 0 3px lightskyblue;
   }
   .navbar-menu__link:hover {
-    border-bottom: 1px solid #EC1F46;
+    color: #EC1F46;
   }
   .search__button:hover {
     background-color: #990e28;
   }
   .user:hover {
-    border-bottom: 1px solid #EC1F46;
+    -webkit-box-shadow: 0 0 0 1px #EC1F46;
+            box-shadow: 0 0 0 1px #EC1F46;
   }
   .activities .card__button {
     background-color: #EC1F46;
@@ -1714,11 +1718,23 @@ template {
   .activities .card__button:hover {
     background-color: #990e28;
   }
+  .hotel-slider__button:hover {
+    -webkit-box-shadow: 0 0 0 1px #EC1F46;
+            box-shadow: 0 0 0 1px #EC1F46;
+  }
+  .reviews-slider__button--prev:hover, .reviews-slider__button--next:hover {
+    -webkit-box-shadow: 0 0 0 1px #EC1F46;
+            box-shadow: 0 0 0 1px #EC1F46;
+  }
   .footer__social-links:hover {
     color: #EC1F46;
   }
   .footer__link:hover {
-    border-bottom: 1px solid #EC1F46;
+    color: #EC1F46;
+  }
+  .footer__link__img:hover {
+    -webkit-box-shadow: 0 0 0 1px #EC1F46;
+            box-shadow: 0 0 0 1px #EC1F46;
   }
 }
 
@@ -2491,7 +2507,7 @@ template {
     line-height: 18px;
   }
   .reviews {
-    padding-bottom: 36px;
+    padding-bottom: 46px;
   }
   .reviews-title {
     font-style: normal;
@@ -2516,7 +2532,11 @@ template {
   .reviews-slider__button--next {
     right: 42%;
   }
+  .reviews-slider__profile {
+    margin-bottom: 32px;
+  }
   .reviews-slider__text {
+    width: 97%;
     height: 266px;
   }
   .activities {
@@ -2602,11 +2622,14 @@ template {
     margin-top: 11px;
   }
   .footer__title--mt-2 {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
   .footer__title--mb-4 {
     margin-top: 32px;
     margin-bottom: 15px;
+  }
+  .footer__title--inline {
+    margin-top: 3px;
   }
   .footer__icon-wrapper {
     min-width: 32px;
@@ -2616,7 +2639,7 @@ template {
     margin-bottom: 14px;
   }
   .footer__link-end {
-    margin-right: 9px;
+    margin: 0;
   }
   .footer__form {
     -webkit-box-pack: start;
