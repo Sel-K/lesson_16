@@ -1736,7 +1736,7 @@ template {
             box-shadow: 0 0 0 1px #EC1F46;
   }
   .breadcrumb-list__link:hover {
-    border-bottom: 1px solid #EC1F46;
+    color: #EC1F46;
   }
   .footer__social-links:hover {
     color: #EC1F46;
