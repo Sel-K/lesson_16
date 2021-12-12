@@ -1548,6 +1548,7 @@ template {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  overflow-y: auto;
 }
 
 .modal__overlay--visible::-webkit-scrollbar {
@@ -1581,6 +1582,11 @@ template {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  overflow-y: auto;
+}
+
+.modal__dialog--visible::-webkit-scrollbar {
+  width: 0;
 }
 
 .modal__form {
@@ -2401,17 +2407,11 @@ template {
   .footer__title--inline {
     margin-right: 38px;
   }
+  .modal__dialog {
+    height: 86%;
+  }
   .modal__message {
     width: 100%;
-  }
-  .modal__message::-webkit-scrollbar {
-    width: 0;
-  }
-  .modal__dialog {
-    height: 515px;
-  }
-  .modal__dialog::-webkit-scrollbar {
-    width: 0;
   }
 }
 
@@ -2727,8 +2727,12 @@ template {
     width: 90%;
     height: 95%;
     padding: 22px 23px 29px 23px;
+    overflow-y: auto;
   }
-  .modal__dialog__title {
+  .modal::-webkit-scrollbar {
+    width: 0;
+  }
+  .modal::-webkit-scrollbar__title {
     margin-top: -3px;
   }
   .modal__form {
