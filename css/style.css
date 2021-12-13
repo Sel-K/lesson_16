@@ -1690,7 +1690,8 @@ template {
         flex-basis: 100%;
   }
   .modal__dialog--visible {
-    height: 98%;
+    height: 79%;
+    width: 100%;
   }
 }
 
